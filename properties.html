@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Real Estate - Properties</title>
+    <link rel="stylesheet" href="properties.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mide Properties </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="properties-content">
+        <div class="container">
+            <h2>Available Properties</h2>
+
+            <div class="filter-sort-controls">
+                <div class="control-group">
+                    <label for="property-type">Type:</label>
+                    <select id="property-type">
+                        <option value="all">All Types</option>
+                        <option value="sale">For Sale</option>
+                        <option value="rent">For Rent</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="min-beds">Min Beds:</label>
+                    <input type="number" id="min-beds" value="0" min="0">
+                </div>
+
+                <div class="control-group">
+                    <label for="max-price">Max Price/Rent:</label>
+                    <input type="number" id="max-price" value="" placeholder="Any">
+                </div>
+
+                 <div class="control-group">
+                     <label for="sort-by">Sort By:</label>
+                     <select id="sort-by">
+                         <option value="price-asc">Price/Rent (Low to High)</option>
+                         <option value="price-desc">Price/Rent (High to Low)</option>
+                         <option value="beds-asc">Beds (Low to High)</option>
+                         <option value="beds-desc">Beds (High to Low)</option>
+                     </select>
+                 </div>
+            </div>
+            <div class="property-list" id="property-list">
+                <div class="property-item" data-type="sale" data-beds="3" data-price="900000000">
+                    <img src="img/luxury-3-bedroom-apartment-bqpool-etc-x-2yrs-YfoYeWzA5seksrsLsAFj.png" alt="Property Image">
+                    <div class="details">
+                        <h3>3 Bedroom Apartment With BQ</h3>
+                         <p class="location">Banana Island Estate Ikoyi Lagos</p>
+                        <p>3 Beds | 3 Baths </p>
+                        <p class="price">₦900,000,000</p>
+                        <p>3 Bedroom Apartment With BQ / Flat / Apartment FOR SALE </p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="rent" data-beds="3" data-price="300000000">
+                    <img src="img/gzXFU-luxury-furnished-3-bedroom-pent-house-JXZdR3WOfLEw1R9jS7MO.jpg" alt="Property Image">
+                    <div class="details">
+                        <h3>3 Bedroom Penthouse</h3>
+                         <p class="location">Lekki Phase 1 Lekki Lagos</p>
+                        <p>3 Bed | 3 Bath </p>
+                        <p class="price">₦300,000,000/year</p>
+                        <p>3 Bedroom Penthouse/ Flat Apartment FOR rent</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="2" data-price="70000000">
+                    <img src="img/2-bedroom-apartment-for-sale-h9xVvrY37VzHFmM7j3Vg.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>2 Bedroom Apartment</h3>
+                         <p class="location">Ikota Lekki Lagos</p>
+                        <p>2 Bed | 2 Bath </p>
+                        <p class="price">₦70,000,000</p>
+                        <p>2 Bedroom Apartment/ Flat Apartment FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="rent" data-beds="1" data-price="400000000">
+                    <img src="img/4-bedroom-penthouse-with-bq-sT69aFJIYJ7Z0O1j3npl.jpg" alt="Property Image">
+                    <div class="details">
+                        <h3>4 Bedroom Penthouse With BQ/ Flat Apartment FOR sale</h3>
+                         <p class="location">Ikate Lekki Lagos</p>
+                        <p>4 Bed | 4 Bath </p>
+                        <p class="price">₦400,00,000/year</p>
+                        <p>4 Bedroom Penthouse With BQ/ Flat Apartment FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="2" data-price="135000000">
+                    <img src="img/2-bedroom-apartment-nwNOe0aYGDqfXCelAvjU.jpg" alt="Property Image">
+                    <div class="details">
+                        <h3>2 Bedroom Apartment</h3>
+                         <p class="location">Ikate Elegushi Lekki Lagos</p>
+                        <p>2 Bed | 2 Bath</p>
+                        <p class="price">₦75,000,000</p>
+                        <p>2 Bedroom Apartment/ Flat Apartment FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="2" data-price="380000000">
+                    <img src="img/new-4-flats-of-2-bedroom-apartment-bB8nk0cISdC0XfbrorwX.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>8 Units Of 2 Bedroom Apartment</h3>
+                         <p class="location">Opposite Pamo University Obia Akpor Port Hrcourt Rivers</p>
+                        <p>2 Bed | 3 Bath </p>
+                        <p class="price">₦380,000,000/year</p>
+                        <p>8 Unit of 2 Bedroom Apartment FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="2" data-price="20000000">
+                    <img src="img/new-2-bedroom-apartment-JVBiV2G7bOJdg9mg6FOs.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>Newly Built 2 Bedroom Apartment</h3>
+                         <p class="location">Ikate Lekki Phase 1 Lekki Lagos</p>
+                        <p>2 Bed | 2 Bath </p>
+                        <p class="price">₦200,000,000</p>
+                        <p>Newly Built 2 Bedroom Apartment/ Flat Apartment FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="rent" data-beds="2" data-price="140000000">
+                    <img src="img/ew-2-bedroom-apartment-uLWaaUW2r2xmlMrmOTl6.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>2 Bedroom Apartment</h3>
+                         <p class="location">Ikate Lekki Phase 1 Lekki Lagos</p>
+                        <p>2 Bed | 2 Bath</p>
+                        <p class="price">₦140,000,000/year</p>
+                        <p>2 Bedroom Apartment/ Flat Apartment FOR rent.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="3" data-price="185000000">
+                    <img src="img/new-3-bedroom-apartment-pdlZJE7cvn2b3nMfZIFc.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>3 Bedroom Apartment</h3>
+                         <p class="location">Ikate Lekki Lagos</p>
+                        <p>3 Bed | 2 Bath </p>
+                        <p class="price">₦185,000,000</p>
+                        <p>Recently renovated with modern finishes/ For Sale.</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="rent" data-beds="2" data-price="80000000">
+                    <img src="img/spacious-2-bedroom-apartment-lGSH7XA29Z6UAkMaokYF.jpg" alt="Property Image">
+                    <div class="details">
+                        <h3>2 Bedroom Apartment</h3>
+                         <p class="location">Orchid Lekki Lagos</p>
+                        <p>2 Bed | 2 Bath </p>
+                        <p class="price">₦1,500,000/year</p>
+                        <p>2 Bedroom Apartment/ Flat Apartment FOR rent</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="4" data-price="69000000">
+                    <img src="img/5-bedroom-la-luxury-standard-duplex-eRfBIy8Wi9vEt4HjcoOP.jpg" alt="Property Image">
+                    <div class="details">
+                        <h3>5 Bedroom Detached Duplex</h3>
+                         <p class="location">Chevron Lekki Lagos</p>
+                        <p>5 Bed | 6 Bath </p>
+                        <p class="price">₦690,000,000</p>
+                        <p>5 Bedroom Detached Duplex / FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                 <div class="property-item" data-type="sale" data-beds="4" data-price="300000000">
+                    <img src="img/new-2-bedroom-apartment-XYIue7vcNCTIvKg2RDxW.jpeg" alt="Property Image">
+                    <div class="details">
+                        <h3>New 4 Bedroom Maisonette</h3>
+                         <p class="location">Ikate Lekki Lagos</p>
+                        <p>4 Bed | 4 Bath </p>
+                        <p class="price">₦300,000,000/year</p>
+                        <p>New 4 Bedroom Maisonette / Flat FOR sale</p>
+                        <a href="#" class="btn">View Details</a>
+                    </div>
+                </div>
+
+                </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mide Properties. All rights reserved.</p>
+        </div>
+    </footer>
+
+     <script src="properties.js"></script>
+
+</body>
+</html>
